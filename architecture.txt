@@ -1,0 +1,46 @@
+MASTER TIME CONTROL
+
+command     needs arg?     consumes turn on success?     consumes turn on failure?
+rest        no             yes                           no
+eat         yes            yes                           no
+mine        yes            yes                           no
+gather      yes            yes                           no
+status      no             no                            no
+help        no             no                            no
+
+---------------
+
+
+NOTE:
+Modules should define functions/classes/constants at top level.
+They should not run your program at top level 
+(unless you explicitly want that module to behave like a script).
+
+V1 scope 
+health bar: static var, include in loop 
+day-night cycle: increment a variable to up hours based on action counts, 
+hours trigger morning -> noon -> eve -> night cycle 
+hunger: actions log OR counter + time. default decrement based on time to force hunting & farming. 
+actions like mining + resource harvesting decrease it faster 
+if hunger gets below threshold hp bar takes DoT 
+spawn enemies in the night 
+animals & other resource can be spawned at random
+
+Tighter V1.1:
+Milestone 0 (first playable loop):
+hp, hunger, hour
+one action: mine
+print status each turn
+This is the dopamine engine.
+
+Milestone 1 (time):
+action increments hour
+display “morning/noon/eve/night”
+
+Milestone 2 (hunger):
+hunger decreases with time
+when hunger < threshold -> HP DoT
+
+Milestone 3 (night danger, simplest possible):
+at night, chance of encounter
+encounter = “you take X damage” (no combat system yet)
