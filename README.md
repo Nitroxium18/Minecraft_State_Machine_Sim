@@ -1,6 +1,6 @@
 # Minecraft State Machine Sim
 
-A terminal based survival simulator inspired by Minecraft-style state changes
+A terminal based survival simulator inspired by Minecraft style state changes
 
 ## Overview
 
