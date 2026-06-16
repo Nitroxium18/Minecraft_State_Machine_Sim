@@ -13,3 +13,9 @@ This project models a simple survival game using a state machine. The player has
 - Basic action system
 - Time progression
 - Simple inventory structure
+
+## How to Run
+
+After you clone or download the repository, open a terminal in the project root and run:
+
+python src/main.py
